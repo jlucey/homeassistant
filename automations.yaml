@@ -1,0 +1,9 @@
+- id: commSeq
+  alias: Command Sequence
+  trigger:
+    - entity_id: sensor.command
+      platform: state
+  action:
+  - service: shell_command.processsequence
+    data_template:
+      cmdsequence: '{{ states.sensor.command.state }}'

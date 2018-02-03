@@ -1,0 +1,54 @@
+switch.familyroom_switch:
+  friendly_name: Family Room
+  icon: mdi:lightbulb
+
+switch.kitchentable_switch:
+  friendly_name: Kitchen Table
+  icon: mdi:lightbulb
+
+switch.kitchenisland_switch:
+  friendly_name: Kitchen Island
+  icon: mdi:lightbulb
+
+switch.hallwaydownstairs1_switch:
+  friendly_name: Mid Hallway
+  icon: mdi:lightbulb
+
+switch.hallwaydownstairs2_switch:
+  friendly_name: Front Hallway
+  icon: mdi:lightbulb
+
+switch.hallwayupstairs_switch:
+  friendly_name: Upstairs Hallway
+  icon: mdi:lightbulb
+
+switch.bathroomdownstairs_switch:
+  friendly_name: First Floor Bathroom
+  icon: mdi:lightbulb
+
+switch.playroom_switch:
+  friendly_name: Playroom
+  icon: mdi:lightbulb
+
+switch.deck_switch:
+  friendly_name: Back Deck
+  icon: mdi:lightbulb
+
+switch.kyle_switch:
+  friendly_name: Kyle
+  icon: mdi:lightbulb
+
+fan.kyle_level:
+  friendly_name: Kyle
+
+cover.unknown_id014f_unknown_type4744_id3530_barrier_state_label:
+  friendly_name: Garage
+
+sensor.uptime:
+  friendly_name: Up Time
+
+sensor.pws_feelslike_f:
+  friendly_name: Temp
+
+sensor.disk_used_home:
+  friendly_name: Disk

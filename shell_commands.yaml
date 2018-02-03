@@ -1,0 +1,9 @@
+streamcast: irsend send_once receiver power_on && irsend send_once tv power_on && irsend send_once receiver hdmi5
+
+processsequence: python3 /home/homeassistant/.homeassistant/process_sequence.py {{cmdsequence}}
+
+# Must update user in sudoer
+restarthass: sudo systemctl restart home-assistant@homeassistant.service
+
+# Must update user in sudoer
+rebootpi: sudo reboot now

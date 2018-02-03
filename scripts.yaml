@@ -1,0 +1,11 @@
+restarthass:
+  alias: Restart HASS
+  sequence:
+    - alias: Restart HASS
+      service: shell_command.restarthass
+
+rebootpi:
+  alias: Reboot Pi
+  sequence:
+    - alias: Reboot Pi
+      service: shell_command.rebootpi

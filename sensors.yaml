@@ -1,0 +1,31 @@
+- platform: wunderground
+  api_key: !secret wunderground_api_key
+  pws_id: !secret wunderground_pws_id
+  monitored_conditions:
+    - weather
+    - feelslike_f
+    - precip_today_in
+
+- platform: systemmonitor
+  resources:
+    - type: disk_use_percent
+      arg: /home
+    - type: since_last_boot
+
+- platform: time_date
+  display_options:
+      - 'time'
+      - 'date'
+
+- platform: command
+
+- platform: uptime
+
+- platform: crimereports
+  name: Crime Reports
+  radius: 1600
+
+- platform: systemmonitor
+  name: Disk
+  resources:
+  - type: disk_free

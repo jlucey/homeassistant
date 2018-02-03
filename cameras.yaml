@@ -1,0 +1,5 @@
+- platform: generic
+  still_image_url: !secret camera_kyle_url
+  name: Kyle
+  username: !secret camera_kyle_username
+  password: !secret camera_kyle_password

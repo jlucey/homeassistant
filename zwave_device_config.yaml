@@ -1,0 +1,5 @@
+switch.kitchentable_switch:
+  polling_intensity: 1
+
+switch.hallwayupstairs_switch:
+  polling_intensity: 1

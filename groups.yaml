@@ -1,0 +1,90 @@
+default_view:
+  view: yes
+  name: Home
+  icon: mdi:home
+  entities:
+    - sensor.uptime
+    - sensor.pws_feelslike_f
+    - sensor.crime_reports
+    - sensor.disk_used_home
+    - group.lights
+    - group.fans
+    - group.garage
+    - group.cameras
+    - group.system
+    - group.mediaplayers
+
+lights:
+  name: Lights
+  entities:
+  - switch.familyroom_switch
+  - switch.kitchentable_switch
+  - switch.kitchenisland_switch
+  - switch.hallwaydownstairs1_switch
+  - switch.hallwaydownstairs2_switch
+  - switch.hallwayupstairs_switch
+  - switch.bathroomdownstairs_switch
+  - switch.playroom_switch
+  - switch.deck_switch
+  - switch.kyle_switch
+
+fans:
+  name: Fans
+  control: hidden
+  entities:
+  - fan.kyle_level
+
+garage:
+ name: Garage
+ entities:
+ - cover.unknown_id014f_unknown_type4744_id3530_barrier_state_label
+
+familyroom_lights:
+  - switch.familyroom_switch
+
+kitchentable_lights:
+  - switch.kitchentable_switch
+
+kitchenisland_lights:
+  - switch.kitchenisland_switch
+
+kitchen_lights:
+  - switch.kitchentable_switch
+  - switch.kitchenisland_switch
+
+hallwaydownstairs_lights:
+  - switch.hallwaydownstairs1_switch
+  - switch.hallwaydownstairs2_switch
+
+bathroomdownstairs_lights:
+  - switch.bathroomdownstairs_switch
+
+hallwayupstairs_lights:
+  - switch.hallwayupstairs_switch
+
+playroom_lights:
+  - switch.playroom_switch
+
+goodnight_on_lights:
+  - switch.familyroom_switch
+  - switch.kitchentable_switch
+  - switch.kitchenisland_switch
+  - switch.hallwaydownstairs1_switch
+  - switch.hallwaydownstairs2_switch
+  - switch.hallwayupstairs_switch
+
+cameras:
+  - camera.kyle
+
+system:
+  control: hidden
+  name: System
+  entities:
+  - script.restarthass
+  - script.rebootpi
+
+mediaplayers:
+  - media_player.family_room_google
+  - media_player.stereo
+  - media_player.roku_13a17w017621
+  # - media_player.roku_5s6747144501
