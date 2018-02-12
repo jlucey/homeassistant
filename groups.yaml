@@ -7,6 +7,7 @@ default_view:
     - sensor.pws_feelslike_f
     - sensor.crime_reports
     - sensor.disk_used_home
+    - sensor.alarm
     - group.lights
     - group.fans
     - group.garage

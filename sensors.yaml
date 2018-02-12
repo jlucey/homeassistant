@@ -29,3 +29,7 @@
   name: Disk
   resources:
   - type: disk_free
+
+- platform: mqtt
+  state_topic: !secret mqtt_topic
+  name: alarm

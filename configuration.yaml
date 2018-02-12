@@ -71,3 +71,8 @@ panel_iframe:
    title: 'Node-Red'
    icon: 'mdi:shuffle-variant'
    url: !secret nodered_url
+
+mqtt:
+  broker: !secret mqtt_broker
+  username: !secret mqtt_username
+  password: !secret mqtt_password
