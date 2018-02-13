@@ -33,3 +33,18 @@
 - platform: mqtt
   state_topic: !secret mqtt_topic
   name: alarm
+
+- platform: mqtt
+  state_topic: !secret mqtt_topic
+  name: "Back Door"
+  qos: 0
+  device_class: opening
+  value_template: !secret mqtt_back_door_template
+
+
+- platform: mqtt
+  state_topic: !secret mqtt_topic
+  name: "Garage Door"
+  qos: 0
+  device_class: opening
+  value_template: !secret mqtt_garage_door_template
