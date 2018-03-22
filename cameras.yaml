@@ -3,3 +3,10 @@
   name: Kyle
   username: !secret camera_kyle_username
   password: !secret camera_kyle_password
+
+- platform: yi
+  name: Camera
+  host: !secret camera_yi_host
+  password: !secret camera_yi_password
+  # path: /home/camera/feed
+  ffmpeg_arguments: '-vf scale=800:450'

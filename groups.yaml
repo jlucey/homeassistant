@@ -3,11 +3,11 @@ default_view:
   name: Home
   icon: mdi:home
   entities:
-    - sensor.uptime
-    - sensor.pws_feelslike_f
     - sensor.crime_reports
     - sensor.disk_used_home
-    - sensor.alarm
+    - sensor.front_door
+    - sensor.back_door
+    - sensor.garage_door
     - group.lights
     - group.fans
     - group.garage
@@ -38,7 +38,9 @@ fans:
 garage:
  name: Garage
  entities:
- - cover.unknown_id014f_unknown_type4744_id3530_barrier_state_label
+ # - cover.unknown_id014f_unknown_type4744_id3530_barrier_state_label
+ - cover.linear_gd00z4_garage_door_opener_remote_controller_barrier_state_label
+
 
 familyroom_lights:
   - switch.familyroom_switch
@@ -76,6 +78,7 @@ goodnight_on_lights:
 
 cameras:
   - camera.kyle
+  - camera.camera
 
 system:
   control: hidden

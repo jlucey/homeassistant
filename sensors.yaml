@@ -48,3 +48,10 @@
   qos: 0
   device_class: opening
   value_template: !secret mqtt_garage_door_template
+
+- platform: mqtt
+  state_topic: !secret mqtt_topic
+  name: "Front Door"
+  qos: 0
+  device_class: opening
+  value_template: !secret mqtt_front_door_template

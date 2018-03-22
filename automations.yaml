@@ -7,3 +7,14 @@
   - service: shell_command.processsequence
     data_template:
       cmdsequence: '{{ states.sensor.command.state }}'
+
+- id: chromecast
+  alias: Chromecast Play
+  trigger:
+  - entity_id: media_player.stereo
+    platform: state
+    to: 'playing'
+  action:
+  - service: shell_command.processsequence
+    data_template:
+      cmdsequence: 'WATCH CHROMECAST'
