@@ -59,6 +59,7 @@ group: !include groups.yaml
 script: !include scripts.yaml
 sensor: !include sensors.yaml
 shell_command: !include shell_commands.yaml
+switch: !include switches.yaml
 weblink: !include weblinks.yaml
 zwave:
   usb_path: /dev/ttyACM0

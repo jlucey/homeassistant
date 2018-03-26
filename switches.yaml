@@ -1,0 +1,14 @@
+- platform: command_line
+  switches:
+    camera_front_set_preset_8:
+      command_on: 'curl --silent -k "http://192.168.1.150:81/cam/Front/pos=8"'
+      command_off: 'curl --silent -k "http://192.168.1.150:81/cam/Front/pos=8"'
+    camera_front_set_preset_9:
+      command_on: 'curl --silent -k "http://192.168.1.150:81/cam/Front/pos=9"'
+      command_off: 'curl --silent -k "http://192.168.1.150:81/cam/Front/pos=9"'
+    camera_front_set_preset_10:
+      command_on: 'curl --silent -k "http://192.168.1.150:81/cam/Front/pos=10"'
+      command_off: 'curl --silent -k "http://192.168.1.150:81/cam/Front/pos=10"'
+    camera_front_set_preset_11:
+      command_on: 'curl --silent -k "http://192.168.1.150:81/cam/Front/pos=11"'
+      command_off: 'curl --silent -k "http://192.168.1.150:81/cam/Front/pos=11"'

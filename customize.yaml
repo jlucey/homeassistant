@@ -38,6 +38,18 @@ switch.kyle_switch:
   friendly_name: Kyle
   icon: mdi:lightbulb
 
+switch.camera_front_set_preset_8:
+  friendly_name: Living Room
+
+switch.camera_front_set_preset_9:
+  friendly_name: Front Door
+
+switch.camera_front_set_preset_10:
+  friendly_name: Lower Stairs
+
+switch.camera_front_set_preset_11:
+  friendly_name: Upper Stairs
+
 fan.kyle_level:
   friendly_name: Kyle
 

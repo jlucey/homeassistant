@@ -12,6 +12,7 @@ default_view:
     - group.fans
     - group.garage
     - group.cameras
+    - group.front_camera
     - group.system
     - group.mediaplayers
 
@@ -77,8 +78,18 @@ goodnight_on_lights:
   - switch.hallwayupstairs_switch
 
 cameras:
+  - camera.front
   - camera.kyle
-  - camera.camera
+  - camera.kaylee
+
+front_camera:
+  control: hidden
+  name: Front Camera Presets
+  entities:
+  - switch.camera_front_set_preset_8
+  - switch.camera_front_set_preset_9
+  - switch.camera_front_set_preset_10
+  - switch.camera_front_set_preset_11
 
 system:
   control: hidden
