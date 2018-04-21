@@ -38,6 +38,10 @@ switch.kyle_switch:
   friendly_name: Kyle
   icon: mdi:lightbulb
 
+switch.flood_light_switch:
+  friendly_name: Flood Light
+  icon: mdi:lightbulb
+
 switch.camera_front_set_preset_8:
   friendly_name: Living Room
 

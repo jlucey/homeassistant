@@ -28,7 +28,9 @@ lights:
   - switch.bathroomdownstairs_switch
   - switch.playroom_switch
   - switch.deck_switch
+  - switch.flood_light_switch
   - switch.kyle_switch
+
 
 fans:
   name: Fans

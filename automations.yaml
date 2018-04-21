@@ -1,20 +1,41 @@
 - id: commSeq
   alias: Command Sequence
   trigger:
-    - entity_id: sensor.command
-      platform: state
+  - entity_id: sensor.command
+    platform: state
   action:
   - service: shell_command.processsequence
     data_template:
       cmdsequence: '{{ states.sensor.command.state }}'
-
 - id: chromecast
   alias: Chromecast Play
   trigger:
   - entity_id: media_player.stereo
     platform: state
-    to: 'playing'
+    to: playing
   action:
   - service: shell_command.processsequence
     data_template:
-      cmdsequence: 'WATCH CHROMECAST'
+      cmdsequence: WATCH CHROMECAST
+- id: floodlightsyncon
+  alias: Sync Flood lights On
+  trigger:
+  - entity_id: switch.deck_switch
+    platform: state
+    from: 'off'
+    to: 'on'
+  action:
+  - service: switch.turn_on
+    data_template:
+      entity_id: switch.flood_light_switch
+- id: floodlightsyncoff
+  alias: Sync Flood lights Off
+  trigger:
+  - entity_id: switch.deck_switch
+    platform: state
+    from: 'on'
+    to: 'off'
+  action:
+  - service: switch.turn_off
+    data_template:
+      entity_id: switch.flood_light_switch
